@@ -3,58 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Java Documentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
     <nav id="navbar">
-        <header>This is the header</header>
-        <a class="nav-link" href="#introduction">INTRODUCTION</a>
-
-    </nav>
-
-
-    <main id="main-doc">
-        <p>Technical documentationn goes here</p>
-        <section>1</section>
-        <section>6</section>
-        <section>5</section>
-        <section>4</section>
-        <section>3</section>
-        <section>2</section>
-    </main>
-
-    
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <nav id="navbar">
-        <header>This is the header</header>
+        <header>Java Script Documentation</header>
         <a class="nav-link" href="#introduction">Introduction</a>
-        <a class="nav-link" href="#Basic_JS">What you should already know</a>
-        <a class="nav-link" href="#hello_world">Hello world </a>
+        <a class="nav-link" href="#basicjs">What you should already know</a>
         <a class="nav-link" href="#jsand_java">Java script and java</Script></a>
-        <a class="nav-link" href="#variable">Vairable Declaring Variable</a>
+        <a class="nav-link" href="#helloWorld">Hello world </a>
+        <a class="nav-link" href="#variable">Declaring Variable</a>
         <a class="nav-link" href="#ifelse_statement">If else Statement</a>
 
     </nav>
 
 
     <main id="main-doc">
-       <section id="introduction" class="main-section">
-        <header>Introduction</header>
+        <section id="introduction" class="main-section">
+            <header>Introduction</header>
+            <p>JavaScript is a versatile and dynamic programming language widely used for creating interactive elements
+                on websites. With its ability to add functionality like form validation and animations, JavaScript plays
+                a crucial role in enhancing user experience.</p>
+            <p>
+                This documentation introduces JavaScript's key features, its history, compatibility with web browsers,
+                and its significance in modern web development for creating dynamic and engaging web pages.
+            </p>
+        </section>
 
-       </section>
+        <section id="basicjs" class="main-section">
+            <header>Basic to Java Script</header>
+            <p>
+                JavaScript, a dynamic programming language, is essential for creating interactive elements on websites.
+                Its features, such as form validation and animations, enhance user experience. This documentation
+                introduces JavaScript's history, compatibility with web browsers, and its pivotal role in modern web
+                development for crafting engaging web pages.
+            </p>
+            <ul>
+                <li><span class="bold">Variables: </span> In JavaScript, variables are used to store data values. They
+                    can be declared using the var, let, or const keywords.</li>
+
+                <li><span class="bold">Data Types: </span>
+                    JavaScript supports various data types such as numbers, strings, booleans, arrays, objects, and
+                    more.
+                </li>
+                <li><span class="bold">Conditional statements: </span>
+                    JavaScript uses if, else if, and else statements to make decisions based on different conditions.
+                </li>
+                <li><span class="bold">Loops: </span>
+                    JavaScript provides for loops, while loops, and do...while loops to iterate through code blocks
+                    multiple times.
+                </li>
+                <li><span class="bold" >Events: </span>
+                    JavaScript can respond to user actions like clicks, mouse movements, and keyboard inputs through
+                    event handling.
+                </li>
+            </ul>
+        </section>
+        <section id="jsand_java" class="main-section">
+            <header>Js and Java</header>
+            <p>JavaScript and Java are similar in some ways but fundamentally different in some others. The JavaScript
+                language resembles Java but does not have Java's static typing and strong type checking. JavaScript
+                follows most Java expression syntax, naming conventions and basic control-flow constructs which was the
+                reason why it was renamed from LiveScript to JavaScript.</p>
+            <p>
+                In contrast to Java's compile-time system of classes built by declarations, JavaScript supports a
+                runtime system based on a small number of data types representing numeric, Boolean, and string values.
+                JavaScript has a prototype-based object model instead of the more common class-based object model. The
+                prototype-based model provides dynamic inheritance; that is, what is inherited can vary for individual
+                objects. JavaScript also supports functions without any special declarative requirements. Functions can
+                be properties of objects, executing as loosely typed methods.
+            </p>
+
+            <p>
+                JavaScript is a very free-form language compared to Java. You do not have to declare all variables,
+                classes, and methods. You do not have to be concerned with whether methods are public, private, or
+                protected, and you do not have to implement interfaces. Variables, parameters, and function return types
+                are not explicitly typed.
+            </p>
+        </section>
+
+        <section id="helloWorld" class="main-section">
+            <header>Printing Hello world in Java</header>
+            <p>Here is an example of a "Hello World" program in JavaScript:</p>
+            <code>console.log("Hello, World!");</code>
+            <p>
+                In this example, the JavaScript code within the tags uses console.log() to output the message "Hello,
+                World!" to the console. When you run this code in a browser, you should see the message displayed in the
+                console.
+            </p>
+            <p>Greeting someone.</p>
+            <code>
+                function greetMe(yourName) { alert("Hello " + yourName); }
+greetMe("World");
+            </code>
+            <p>In yourName place, enter your name and run the program.</p>
+        </section>
+
+        <section id="variable" class="main-section">
+            <header>Variables</header>
+            <p>You use variables as symbolic names for values in your application. The names of variables, called
+                identifiers, conform to certain rules.
+            </p>
+
+            <p> A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent
+                characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the
+                characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).
+            </p>
+
+            <code>String name = "Bruce Wang";</code>
+            <p>This creates a simple string data type variable.</p>
+
+            <p> You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode
+                escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and
+                _name.</p>
+        </section>
+        <section id="ifelse_statement" class="main-section">
+            <header>if..else Statement</header>
+            <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause
+                to execute a statement if the condition is false. An if statement looks as follows:</p>
+            <code>if (condition) { statement_1; } else { statement_2; }</code>
+
+            <p>condition can be any expression that evaluates to true or false. See Boolean for an explanation of what
+                evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise,
+                statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if
+                statements.</p>
+
+            <p>
+                You may also compound the statements using else if to have multiple conditions tested in sequence, as
+                follows:
+            </p>
+            <code>
+                if (condition_1) { statement_1; } else if (condition_2) {
+                    statement_2; } else if (condition_n) { statement_n; } else {
+                    statement_last; }
+            </code>
+            <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be
+                confused with equality when glancing over the code.</p>
+
+        </section>
     </main>
 
-    
+
 </body>
+
 </html>
